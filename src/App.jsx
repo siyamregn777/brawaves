@@ -1,17 +1,30 @@
+import ButtonGradient from "./assets/svg/ButtonGradient";
+import Benefits from "./components/Benefits";
+import Collaboration from "./components/Collaboration";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Pricing from "./components/Pricing";
+import Roadmap from "./components/Roadmap";
+import Services from "./components/Services";
 
-function App() {
-
+const App = () => {
   return (
-   <div>
-    <h1 className="text-3xl font-bold underline text-center my-4">
-      Hello world!
-    </h1>
-    <p className="text-gray-700 dark:text-gray-300">
-      This is a simple React app with Tailwind CSS.
-    </p>
-    
-   </div>
-  )
-}
+    <>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
+        <Hero />
+        <Benefits />
+        <Collaboration />
+        <Services />
+        <Pricing />
+        <Roadmap />
+        <Footer />
+      </div>
 
-export default App
+      <ButtonGradient />
+    </>
+  );
+};
+
+export default App;
